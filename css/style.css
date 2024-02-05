@@ -19,44 +19,28 @@ header{
     height: auto;
 }
 
-nav {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  gap: 700px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+#nav-pad
+{
+  --bs-nav-link-padding-y: 0;
+  --bs-nav-link-color: rgb(38, 69, 113);
 }
 
-.nav-list{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  text-align: right;
-  vertical-align: top;
-  gap: 10px;
-  align-items: center;
-  text-transform: uppercase;
+.nav-item:hover{
+  --bs-nav-link-hover-color: white;
+  background-color:rgb(38, 69, 113);
+  border-radius: 20px;
 }
+
 .nav-link{
   list-style-type: none;
   font-size: 1em;
   text-decoration: none;
   line-height: 70px;
-  padding: 20px 10px;
+  padding: 20px;
   color: rgb(38, 69, 113);
   background-color: none;
   border: none;
 }
-nav li a:hover{
-  color: white;
-  background-color:rgb(38, 69, 113);
-  border-radius: 20px;
-}
-
-
 
 /* welcome */
 
@@ -247,4 +231,46 @@ form textarea {
   max-width: 600px;
   height: auto;
   object-fit: cover;
+}
+
+
+@media (max-width:768px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome img {
+    width: 100%;
+    height: auto;
+  }
+  .welcome-box {
+    width: 100%;
+    height: auto;
+  }
+
+  #nav-pad
+  {
+    align-items: center;
+    padding: 10px;
+  }
+  .nav-item:hover{
+    background-color: none;
+  }
+}
+
+
+@media (min-width:1024px) {
+  .form {
+    flex-direction: row-reverse;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .form iframe {
+    width: 50%;
+    min-height: 600px;
+    max-height: 100%;
+  }
 }
