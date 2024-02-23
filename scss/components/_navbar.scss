@@ -1,0 +1,52 @@
+header
+{
+    width: 100%;
+    background-color: $mainColor;
+}
+  
+.logo 
+{
+    max-width: 120px;
+    height: auto;
+}
+  
+#nav-button-mod
+{
+    border: 2px solid $letterColor;
+}
+  
+#nav-titulo-mod
+{
+    color: $letterColor;
+    font-weight: bolder;
+}
+
+#nav-pad
+{
+    --bs-nav-link-padding-y: 0;
+    --bs-nav-link-color: $letterColor;
+}
+
+.nav{
+    &-item
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+        &:hover
+        {
+            --bs-nav-link-hover-color: white;
+            background-color:$letterColor;
+            border-radius: 20px;
+        }
+    }
+    &-link{
+    list-style-type: none;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 20px;
+    color: $letterColor;
+    background-color: none;
+    border: none;
+    }
+}

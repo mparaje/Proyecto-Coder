@@ -1,0 +1,46 @@
+
+#accordion-id{
+    --bs-accordion-active-bg:rgb(195, 255, 255);
+    --bs-accordion-btn-color:rgb(38, 69, 113);
+    --bs-accordion-btn-focus-border-color:rgb(38, 69, 113);
+}
+
+.diseños
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    h1{
+        font-weight: bold;
+    }
+    p{
+        margin-top: 30px;
+        text-align: center;
+    }
+    &-box{
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+
+.row {
+margin: 0;
+justify-content: space-around;
+}
+
+.card {
+    --bs-border-color-translucent: none;
+    border-radius: 0;
+    padding: 0;
+    width: 400px;
+    margin: 10px 0;
+    &-img-top{
+        border-radius: 0;
+    }
+}
