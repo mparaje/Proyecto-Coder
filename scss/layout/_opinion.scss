@@ -6,28 +6,37 @@
     align-items: center;
     padding: 30px;
     gap: 30px;
-    img
-    {
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-    }
+}
   
-    &-box-opinion{
-        width: 70%;
-        background-color: none;
-        text-align: center;
-        padding: 15px;
-        border-radius: 20px;
-        border: 2px solid $componentsColor;
-        display: flex;
-        gap: 15px;
+.box-opinion{
+    width: 70%;
+    background-color: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid $letterColor;
+    display: flex;
+    gap: 15px;
+    &:hover {
+        background-color: azure;
+        box-shadow: 3px 3px 13px 5px #11111129;
     }
+}
   
-    &-box-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 15px;
+.box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.box-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    transition: 0.1s;
+    &:hover{
+        filter: blur(0);
     }
 }

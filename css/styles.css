@@ -122,6 +122,199 @@ figure {
   padding-right: 30px;
 }
 
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+.welcome-box {
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  gap: 100px;
+}
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.welcome-text h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  gap: 20px;
+}
+.welcome-text p1 {
+  font-size: 20px;
+  gap: 40px;
+}
+.welcome-text a {
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  align-self: flex-start;
+  gap: 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid rgb(144, 0, 255);
+  color: rgb(38, 69, 113);
+  padding: 10px;
+}
+.welcome-text a:hover {
+  color: white;
+  background-color: rgb(144, 0, 255);
+}
+
+.carousel-img {
+  border-radius: 0;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+.box-opinion {
+  width: 70%;
+  background-color: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid rgb(38, 69, 113);
+  display: flex;
+  gap: 15px;
+}
+.box-opinion:hover {
+  background-color: azure;
+  box-shadow: 3px 3px 13px 5px rgba(17, 17, 17, 0.1607843137);
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.box-img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px);
+  transition: 0.1s;
+}
+.box-img:hover {
+  filter: blur(0);
+}
+
+.contacto h1 {
+  text-align: center;
+  padding: 20px;
+}
+.contacto p {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+.contacto-box {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 50px;
+}
+
+.form-contacto {
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  grid-area: form;
+  padding-left: 10px;
+}
+.form-contacto iframe {
+  width: 50%;
+  min-height: 600px;
+  max-height: 100%;
+}
+.form-contacto button {
+  --bs-btn-bg: black;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-bg: #6c757d;
+  --bs-btn-hover-border-color: #6c757d;
+}
+
+#accordion-id {
+  --bs-accordion-active-bg:rgb(195, 255, 255);
+  --bs-accordion-btn-color:rgb(38, 69, 113);
+  --bs-accordion-btn-focus-border-color:rgb(38, 69, 113);
+}
+
+.diseños {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.diseños h1 {
+  font-weight: bold;
+}
+.diseños p {
+  margin-top: 30px;
+  text-align: center;
+}
+.diseños-box {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.row {
+  margin: 0;
+  justify-content: space-around;
+}
+
+.card {
+  --bs-border-color-translucent: none;
+  --bs-border-radius: 10px;
+  border-radius: 0;
+  padding: 0;
+  width: 400px;
+  margin: 10px 0;
+}
+.card-img-top {
+  border-radius: 10px;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+.about-box h1 {
+  padding: 10px;
+}
+.about-box img {
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+}
+
 @media (min-width: 950px) {
   .carousel-ind div {
     height: 700px;
@@ -200,185 +393,6 @@ figure {
     display: flex;
     flex-direction: column;
   }
-}
-.welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  gap: 30px;
-}
-.welcome-box {
-  width: 50%;
-  height: auto;
-  padding: 15px;
-  display: flex;
-  gap: 100px;
-}
-.welcome-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-}
-.welcome-text h1 {
-  font-size: 24px;
-  text-transform: uppercase;
-  gap: 20px;
-}
-.welcome-text p1 {
-  font-size: 20px;
-  gap: 40px;
-}
-.welcome-text a {
-  text-transform: uppercase;
-  list-style: none;
-  text-decoration: none;
-  align-self: flex-start;
-  gap: 20px;
-  background-color: transparent;
-  border-radius: 20px;
-  border: 2px solid rgb(144, 0, 255);
-  color: rgb(38, 69, 113);
-  padding: 10px;
-}
-.welcome-text a:hover {
-  color: white;
-  background-color: rgb(144, 0, 255);
-}
-
-.carousel-img {
-  border-radius: 0;
-}
-
-.testimonios {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  gap: 30px;
-}
-.testimonios img {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-}
-.testimonios-box-opinion {
-  width: 70%;
-  background-color: none;
-  text-align: center;
-  padding: 15px;
-  border-radius: 20px;
-  border: 2px solid rgb(144, 0, 255);
-  display: flex;
-  gap: 15px;
-}
-.testimonios-box-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-}
-
-.contacto h1 {
-  text-align: center;
-  padding: 20px;
-}
-.contacto p {
-  text-align: center;
-  padding: 20px;
-  margin: 20px;
-}
-.contacto-box {
-  display: flex;
-  align-items: center;
-  padding: 50px 20px;
-  gap: 50px;
-}
-
-.form-contacto {
-  flex-direction: column;
-  height: 100%;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  grid-area: form;
-  padding-left: 10px;
-}
-.form-contacto iframe {
-  width: 50%;
-  min-height: 600px;
-  max-height: 100%;
-}
-.form-contacto button {
-  --bs-btn-bg: black;
-  --bs-btn-border-color: black;
-  --bs-btn-hover-bg: #6c757d;
-  --bs-btn-hover-border-color: #6c757d;
-}
-
-#accordion-id {
-  --bs-accordion-active-bg:rgb(195, 255, 255);
-  --bs-accordion-btn-color:rgb(38, 69, 113);
-  --bs-accordion-btn-focus-border-color:rgb(38, 69, 113);
-}
-
-.diseños {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-}
-.diseños h1 {
-  font-weight: bold;
-}
-.diseños p {
-  margin-top: 30px;
-  text-align: center;
-}
-.diseños-box {
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-}
-
-.row {
-  margin: 0;
-  justify-content: space-around;
-}
-
-.card {
-  --bs-border-color-translucent: none;
-  border-radius: 0;
-  padding: 0;
-  width: 400px;
-  margin: 10px 0;
-}
-.card-img-top {
-  border-radius: 0;
-}
-
-.about-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-}
-.about-box h1 {
-  padding: 10px;
-}
-.about-box img {
-  max-width: 600px;
-  height: auto;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
