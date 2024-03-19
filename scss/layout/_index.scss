@@ -1,54 +1,150 @@
-.welcome 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    gap: 30px;
-  
-    &-box {
-        width: 50%;
-        height: auto;
-        padding: 15px;
-        display: flex;
-        gap: 100px;
+.welcome{
+    &-init 
+    {
+        @include flexible(row, center, center, 30px);
+        text-align: center;
+        padding: 30px;
+        &-box{
+            @extend .welcome-init;
+            flex-direction: column;
+            width: 60%;
+            height: auto;
+            padding: 15px;
+            gap: 15px;
+            h1{
+                font-family: "Bebas Neue", sans-serif;
+                -webkit-text-stroke: 0.1px $letterColor;
+                font-size: 80px;
+                font-weight: bolder;
+                font-style: normal;
+                gap: 20px;
+                background: linear-gradient(to bottom, $mainColor, $letterColor);
+                color: transparent;
+                background-clip: text;
+            }
+            &-p1{
+                font-size: 20px;
+                gap: 40px;
+            }
+            &-link{
+                list-style: none;
+                text-decoration: none;
+                gap: 20px;
+                background-color: transparent;
+                border-radius: 20px;
+                border: 2px solid $letterColor;
+                color: $letterColor;
+                padding: 10px;
+                transition: 0.3s;
+                &:hover{
+                    color: white;
+                    background-color:$letterColor;
+                }
+            }
+        }
     }
-    &-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 15px;
-        h1{
-            font-size: 24px;
-            text-transform: uppercase;
-            gap: 20px;
+    &-products{
+        @include flexible(column, center, center, 0);
+        text-align: center;
+        &-descrip{
+            width: 60%;
+            @include margin-pad(10px, 10px);
+            p{
+                padding-top: 20px;
+            }
         }
-        p1{
-            font-size: 20px;
-            gap: 40px;
+        &-card{
+            flex-wrap: wrap;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            @include margin-pad(10px, 10px);
+            box-shadow: 0px 2px 6px $letterColor;
+            transition: all 0.5s;
+            &:hover{
+                background-color: $componentsColor;
+                box-shadow: 2px 2px 16px $letterColor;
+            }
+            &-img{
+                @include area_desing_components(100%, auto, 8px 8px 0px 0px);
+            }
+            &-descrip{
+                @include flexible(column, center, center, 10px);
+                padding: 15px;
+            }
         }
-        a{
-            text-transform: uppercase;
+        &-link{
+            @include margin-pad(25px 0px, 20px);
             list-style: none;
             text-decoration: none;
-            align-self: flex-start;
-            gap: 20px;
+            font-size: 24px;
             background-color: transparent;
             border-radius: 20px;
-            border: 2px solid $componentsColor;
+            border: 2px solid $letterColor;
             color: $letterColor;
-            padding: 10px;
+            transition: 0.5s;
             &:hover{
                 color: white;
-                background-color:$componentsColor;
+                background-color:$letterColor;
+            }
+        }
+    }
+    &-contacto{
+        @include flexible(column, center, center, 10px);
+        background: url(../assets/images/seccion-contacto.webp);
+        text-align: center;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        padding: 40px;
+        &-text{
+            @include margin-pad(50px 0px, 50px);
+            background-color: rgba(255, 255, 255, 0.616);
+            h3{
+                font-size: 35px;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        a{
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.616);
+            border-radius: 20px;
+            border: 2px solid black;
+            color: black;
+            padding: 10px;
+            transition: 0.5s;
+            &:hover{
+                color: white;
+                background-color:black;
             }
         }
     }
 }
-  
+#card-sinpadd
+{
+    --bs-gutter-x: 0px;
+}
 .carousel
 {
+    width: 70%;
+    height: auto;
     &-img{
         border-radius: 0;
+        object-fit: cover;
     }
+}
+
+.linea-separadora
+{
+    @include margin-pad(50px auto 0 auto, 20px);
+    border-top: 2px solid $letterColor;
+    height: 10px;
+    width: 80%;
 }

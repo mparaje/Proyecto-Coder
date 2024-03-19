@@ -1,0 +1,62 @@
+.proyectos
+{
+    @include flexible(column, center, center, 20px);
+    padding: 20px;
+    &-title{
+        @extend .proyectos;
+        h1{
+            @include margin-pad(10px, 10px);
+            text-shadow: 2px 2px 2px gray;
+        }
+        &-p{
+            @include area_desing_components(70%, auto, 20px);
+            @include margin-pad(30px 0px, 20px);
+            @include text_desing(16px, center, 40px);
+            background-color: none;
+            box-shadow: 2px 2px 10px black;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.03);
+                box-shadow: 3px 3px 15px black;
+                background-color: $componentsColor;
+            }
+        }
+    }
+    &-box{
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        h4{
+            font-size: 34px;
+        }
+    }
+}
+
+.row {
+    margin: 0;
+    justify-content: space-around;
+}
+
+.card {
+    --bs-border-color-translucent: none;
+    --bs-border-radius: 10px;
+    @include area_desing_components(400px, auto, 0);
+    @include margin-pad(10px 0, 0);
+    &-img-top{
+        border-radius: 10px;
+    }
+}
+
+.accordion{
+    --bs-primary-bg-subtle: azure;
+    --bs-accordion-btn-focus-border-color:rgb(38, 69, 113);
+    --bs-body-color: #000000;
+    --bs-border-color: rgb(38, 69, 113);
+}
+.accordion-body{
+    border: 1px solid $letterColor;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgb(9, 28, 53);
+}

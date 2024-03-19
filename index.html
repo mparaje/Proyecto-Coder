@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link al css-->
     <link rel="stylesheet" href="css/styles.css"/>
+    <!--Link a google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;900&display=swap" rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--Link a aos animacion-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Link a bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Birdie's</title>
-    <link rel="shortcut icon" href="assets/images/Logo 2.png" type="image/x-icon">
+    <title>Birdie's | Inicio</title>
+    <link rel="shortcut icon" href="assets/images/Logo 2.webp" type="image/x-icon">
 </head>
 <body>
 <!-- nav-->
 <header>
     <nav class="nav navbar bg-icecream navbar-expand-md">
       <section class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/Logo 2.png" class="logo" alt="logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/images/Logo 2.webp" class="logo" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="button-mod">
         <span class="navbar-toggler-icon"></span>
@@ -28,7 +38,7 @@
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="nav-pad">
               <li class="nav-item"> <a href="index.html" class="nav-link">Inicio</a></li>
               <li class="nav-item"><a href="pages/about.html" class="nav-link">Sobre nosotros</a></li>
-              <li class="nav-item"><a href="pages/diseños.html" class="nav-link">Diseños</a></li>           
+              <li class="nav-item"><a href="pages/proyectos.html" class="nav-link">Proyectos</a></li>           
               <li class="nav-item"><a href="pages/opinion.html" class="nav-link">Opiniones</a></li>
               <li class="nav-item"><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
             </ul>
@@ -37,29 +47,27 @@
       </section>
     </nav>
  </header>
- <main>
+ <main class="welcome">
 
-    <section class="welcome">
-      <article class="welcome-box">
-        <div class="welcome-text">
+    <section class="welcome-init">
+      <article data-aos="fade-right" class="welcome-init-box">
         <h1>Bienvenidos a Birdie's</h1>
-        <p1> Diseñando soluciones y solucionando necesidades</p1>
-        <p2>Especialistas en inmobiliaría y perfilería</p2>
-        <a href="pages/about.html">Ver más</a>
-        </div>
+        <p class="welcome-init-box-p1"> <strong>Diseñando soluciones y solucionando necesidades</strong></p>
+        <p class="welcome-init-box-p2">Especialistas en inmobiliaría y perfilería. Conoce más sobre nosotros</p>
+        <a class="welcome-init-box-link" href="pages/about.html">Ver más</a>
       </article>
 
-      <article id="carouselExampleDark" class="carousel carousel-dark slide">
+      <article id="carouselExampleDark" class="carousel carousel-dark slide" data-aos="zoom-in-up">
         <div class="carousel-inner">
           <div class="carousel-ind">
             <div class="carousel-item active">
-              <img src="assets/images/Silla 1.png" class="carousel-img" alt="Silla1">
+              <img src="assets/images/Silla 1.webp" class="carousel-img" alt="Silla1">
             </div>
             <div class="carousel-item">
-              <img src="assets/images/Vista trasera silla.png" class="carousel-img" alt="Silla2">
+              <img src="assets/images/Vista trasera silla.webp" class="carousel-img" alt="Silla2">
             </div>
             <div class="carousel-item">
-              <img src="assets/images/Explotada.png" class="carousel-img" alt="Silla3">
+              <img src="assets/images/Explotada.webp" class="carousel-img" alt="Silla3">
             </div>
           </div>
         </div>
@@ -74,6 +82,57 @@
       </article>
     </section>
 
+    <section class="linea-separadora"></section>
+
+    <section class="justify-content-center welcome-products">
+      <article class="welcome-products-descrip" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+        <h2 class="display-6 py-3">Productos destacados</h2>
+        <p>Selección de proyectos destacados, desde sillas personalizadas, perfilería a medida e innovadoras y soluciones inmobiliarias. Todos creados para satisfacer específicamente tus necesidades.</p>
+      </article>
+      <article class="container-fluid">
+        <section id="card-sinpadd" class="row my-5 p-4 justify-content-center">
+          <div class="card col-md-3 m-2 welcome-products-card" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">
+            <img class="welcome-products-card-img" src="assets/images/17.webp" alt="Soporte-index">
+            <div class="welcome-products-card-descrip">
+              <h3>T-Holder: Soporte</h3>
+              <p>Soporte para notebook ajustable, diseñado para ofrecer ergonomía y comodidad en cualquier espacio de trabajo. Su mecanismo permite variar la altura, adaptándose a las necesidades de cada usuario y mejorando la postura durante largas horas de uso</p>
+            </div>
+          </div>
+          <div class="card col-md-3 m-2 welcome-products-card" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">
+            <img class="welcome-products-card-img" src="assets/images/Silla 1.webp" alt="Silla-index">
+            <div class="welcome-products-card-descrip">
+              <h3>Silla en concreto</h3>
+              <p>Silla de exterior en concreto, combinando durabilidad y diseño moderno. Ideal para espacios públicos o jardines, ofrece comodidad y resistencia a las inclemencias del tiempo, integrándose armoniosamente con el entorno.</p>
+            </div>
+          </div> 
+          <div class="card col-md-3 m-2 welcome-products-card" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">
+            <img class="welcome-products-card-img" src="assets/images/Perfil cartel 1.webp" alt="Perfil-index">
+            <div class="welcome-products-card-descrip">
+              <h3>Señalética en facultad</h3>
+              <p>Perfil innovador diseñado para sostener carteles indicativos, perfecto para organizar espacios educativos. Su estructura resistente y adaptable facilita la identificación de aulas, salones y áreas diversas, mejorando la orientación dentro de la facultad</p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <a class="welcome-products-link" href="pages/proyectos.html" data-aos="zoom-out">Ver todos</a>
+    </section>
+    
+    <section class="welcome-contacto">
+      <article class="welcome-contacto-text" data-aos="zoom-in-right">
+        <h3>Contáctanos</h3>
+        <p>Visita nuestra sección de contacto para enviarnos tus preguntas o solicitudes. Estamos listos para ayudarte a dar vida a tus ideas.</p>
+      </article>
+      <a href="pages/contacto.html" data-aos="zoom-in-right">Click aquí</a>
+    </section>
+
  </main>
 
 <footer>
@@ -82,13 +141,13 @@
         <h3 class="text-center p-0">Seguinos en:</h3>
         <div class="footer-iconos">
           <a href="https://www.facebook.com" target="_blank">
-          <img class="footer-logo" src="assets/images/logo-fb.png" alt="logo-fb">
+          <img class="footer-logo" src="assets/images/logo-fb.webp" alt="logo-fb">
           </a>
           <a href="https://www.instagram.com" target="_blank">
-            <img class="footer-logo" src="assets/images/logo-ig.png" alt="logo-ig">
+            <img class="footer-logo" src="assets/images/logo-ig.webp" alt="logo-ig">
           </a>
           <a href="https://ar.linkedin.com/" target="_blank">
-            <img class="footer-logo" src="assets/images/logo-ln.png" alt="logo-ln">
+            <img class="footer-logo" src="assets/images/logo-ln.webp" alt="logo-ln">
           </a>
         </div>
       </div>
@@ -100,7 +159,7 @@
       <div class="footer-box">
         <figure>
           <a href="index.html">
-            <img src="assets/images/Logo 2.png" alt="logoFooter" class="logoFooter">
+            <img src="assets/images/Logo 2.webp" alt="logoFooter" class="logoFooter">
           </a>
         </figure>
       </div>
@@ -112,6 +171,10 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Testimonios</title>
-    <link rel="shortcut icon" href="../assets/images/Logo 2.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Link al css-->
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <!--Link a google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;900&display=swap" rel=stylesheet>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!--Link a aos animacion-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Link a bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Birdie's | Testimonios</title>
+  <link rel="shortcut icon" href="../assets/images/Logo 2.webp" type="image/x-icon">
   </head>
 <body>
     <header>
         <nav class="navbar bg-icecream navbar-expand-md">
           <section class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/images/Logo 2.png" class="logo" alt="logo"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../assets/images/Logo 2.webp" class="logo" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="button-mod">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +38,7 @@
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="nav-pad">
                   <li class="nav-item"> <a href="../index.html" class="nav-link">Inicio</a></li>
                   <li class="nav-item"><a href="about.html" class="nav-link">Sobre nosotros</a></li>
-                  <li class="nav-item"><a href="diseños.html" class="nav-link">Diseños</a></li>           
+                  <li class="nav-item"><a href="proyectos.html" class="nav-link">Proyectos</a></li>           
                   <li class="nav-item"><a href="opinion.html" class="nav-link">Opiniones</a></li>
                   <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
@@ -40,52 +47,54 @@
           </section>
         </nav>
      </header>
-
+     <main>
      <section class="testimonios">
-
-        <h1>Opiniones</h1>
-        <p>Estas personas nos dieron su punto de vista sobre nuestro importante trabajo!</p>
-
-        <article class="box-opinion">
-            <img src="../assets/images/op1.jpg" alt="op1" class="box-img">
-            <div class="box-text">
-                <h2>Mariana</h2>
+        <article class="testimonios-title animate__animated animate__zoomIn">
+          <h1 class="display-5">Opiniones</h1>
+          <p class="testimonios-title-p">Bienvenidos a nuestra sección de testimonios, un espacio dedicado a compartir las experiencias y opiniones de quienes han confiado en nosotros para dar forma a sus ideas y proyectos. Aquí encontrarás relatos inspiradores de clientes, colaboradores y socios que reflejan el impacto de nuestro trabajo juntos. Desde transformaciones espaciales hasta innovaciones de producto, cada testimonio es una ventana a las historias de éxito y satisfacción que nos motivan a seguir creando soluciones excepcionales. Descubre cómo nuestra dedicación y expertise han marcado la diferencia.</p>
+        </article>
+          <h2 class="display-6 m-4 py-4 animate__animated animate__bounceInLeft">Testimonios</h2>
+        <article class="testimonios-box-opinion" data-aos="fade-left" data-aos-offset="200"
+        data-aos-duration="200">
+            <img src="../assets/images/op1.webp" alt="op1" class="testimonios-box-opinion-img">
+            <div class="testimonios-box-opinion-text">
+                <h3>Mariana</h3>
                 <p>"¡Increíbles productos! El T-Holder ha cumplido todas mis espectativas sobre la facilidad de uso y la comodidad. Al no ocupar espacio en mí escritorio hace que pueda estudiar más fácilmente"</p>
             </div>
         </article>
 
-        <article class="box-opinion">
-            <img src="../assets/images/op2.jpg" alt="op2" class="box-img">
-            <div class="box-text">
-                <h2>Juan</h2>
+        <article class="testimonios-box-opinion" data-aos="fade-right" data-aos-offset="200"
+        data-aos-duration="200">
+            <img src="../assets/images/op2.webp" alt="op2" class="testimonios-box-opinion-img">
+            <div class="testimonios-box-opinion-text">
+                <h3>Juan</h3>
                 <p>"¡Buenas soluciones! Cómo profesor de la Facultad Regional Delta de la UTN de Campana, me pareció increíble el nuevo sistema de señaletica propuesto por esta empresa. Ha ayudado a los integrantes de la universidad a guiarse fácilmente por los pasillos del establecimiento."</p>
             </div>
         </article>
 
-        <article class="box-opinion">
-            <img src="../assets/images/op3.jpg" alt="op3" class="box-img">
-            <div class="box-text">
-                <h2>Roberto</h2>
+        <article class="testimonios-box-opinion" data-aos="fade-left" data-aos-offset="200"
+        data-aos-duration="200">
+            <img src="../assets/images/op3.webp" alt="op3" class="testimonios-box-opinion-img">
+            <div class="testimonios-box-opinion-text">
+                <h3>Roberto</h3>
                 <p>"¡Ingenio y productividad! Cómo estudiante de la UTN, debo decir que me ha parecido genial el diseño del llavero, lo llevo a todos lados. Estoy muy expectante y ansioso por cada producto nuevo diseñado por esta empresa."</p>
             </div>
         </article>
     </section>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+  </main>
     <footer>
       <section class="footer-cont">
           <div class="footer-box">
             <h3 class="text-center p-0">Seguinos en:</h3>
             <div class="footer-iconos">
               <a href="https://www.facebook.com" target="_blank">
-              <img class="footer-logo" src="../assets/images/logo-fb.png" alt="logo-fb">
+              <img class="footer-logo" src="../assets/images/logo-fb.webp" alt="logo-fb">
               </a>
               <a href="https://www.instagram.com" target="_blank">
-                <img class="footer-logo" src="../assets/images/logo-ig.png" alt="logo-ig">
+                <img class="footer-logo" src="../assets/images/logo-ig.webp" alt="logo-ig">
               </a>
               <a href="https://ar.linkedin.com/" target="_blank">
-                <img class="footer-logo" src="../assets/images/logo-ln.png" alt="logo-ln">
+                <img class="footer-logo" src="../assets/images/logo-ln.webp" alt="logo-ln">
               </a>
             </div>
           </div>
@@ -97,7 +106,7 @@
           <div class="footer-box">
             <figure>
               <a href="../index.html">
-                <img src="../assets/images/Logo 2.png" alt="logoFooter" class="logoFooter">
+                <img src="../assets/images/Logo 2.webp" alt="logoFooter" class="logoFooter">
               </a>
             </figure>
           </div>
@@ -107,6 +116,11 @@
       </div>
     
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

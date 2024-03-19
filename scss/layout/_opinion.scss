@@ -1,42 +1,40 @@
 .testimonios{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    @include flexible(column, center, center, 30px);
     padding: 30px;
-    gap: 30px;
-}
-  
-.box-opinion{
-    width: 70%;
-    background-color: none;
     text-align: center;
-    padding: 15px;
-    border-radius: 20px;
-    border: 2px solid $letterColor;
-    display: flex;
-    gap: 15px;
-    &:hover {
-        background-color: azure;
-        box-shadow: 3px 3px 13px 5px #11111129;
+    &-title{
+        @extend .testimonios;
+        h1{
+            padding: 5px;
+            text-shadow: 2px 2px 2px gray;
+        }
+        &-p{
+            @extend .proyectos-title-p;
+        }
     }
-}
-  
-.box-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
+    
+    &-box-opinion{
+        @include flexible(row, center, center, 15px);
+        @include area_desing_components(70%, auto, 20px);
+        background-color: none;
+        padding: 15px;
+        border: 2px solid $letterColor;
+        &:hover {
+            background-color: $componentsColor;
+            box-shadow: 3px 3px 13px 5px #11111129;
+        }
+        &-text{
+            @extend .testimonios;
+            gap: 15px;
+        }
+        &-img {
+            @include area_desing_components(50%, 100%, 20px);
+            filter: blur(5px);
+            transition: 0.1s;
+            &:hover{
+                filter: blur(0);
+            }
+        }
+    }
 }
 
-.box-img {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(5px);
-    transition: 0.1s;
-    &:hover{
-        filter: blur(0);
-    }
-}

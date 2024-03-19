@@ -1,0 +1,29 @@
+@mixin flexible ($direction, $justify, $align, $gap)
+{
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin area_desing_components ($width, $height, $border-radius)
+{
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    object-fit: cover;
+}
+
+@mixin text_desing ($fontSize, $align, $lineHeight){
+    font-size: $fontSize;
+    text-align: $align;
+    line-height: $lineHeight;
+    text-decoration: none;
+}
+
+@mixin margin-pad ($margin, $padding)
+{
+    margin: $margin;
+    padding: $padding;
+}
