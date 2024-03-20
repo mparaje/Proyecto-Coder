@@ -1,0 +1,28 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://mparaje.github.io/Proyecto-Coder/index.html</loc>
+<lastmod>2024-03-19T03:24:13+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://mparaje.github.io/Proyecto-Coder/pages/about.html</loc>
+<lastmod>2024-03-19T03:24:13+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://mparaje.github.io/Proyecto-Coder/pages/proyectos.html</loc>
+<lastmod>2024-03-19T03:24:13+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://mparaje.github.io/Proyecto-Coder/pages/opinion.html</loc>
+<lastmod>2024-03-19T03:24:13+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://mparaje.github.io/Proyecto-Coder/pages/contacto.html</loc>
+<lastmod>2024-03-19T03:24:13+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+</urlset>
